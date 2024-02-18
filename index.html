@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Document</title>
+
+  <style>
+    .col6 {
+      border: 1px solid red
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+  <script>
+    new Vue({
+      el: '#app',
+      template: `
+      <div class="container mt-5">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Comentário</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button class="btn btn-block btn-primary">Adicionar</button>
+  </div>
+  <!-- COMENTARIOS -->
+  <div class="container mt-5">
+    <ul class="list-group">
+      <div class="list-group-item">
+        <span class="author_comment">Autor: <strong>Lucas Silva</strong></span>
+        <p class="comment_post">Mensagem de teste</p>
+        <div>
+          <a href="" title="excluir">Excluir</a>
+        </div>
+      </div>
+    </ul>
+  </div>
+      `
+    })
+  </script>
+</body>
+
+</html>
